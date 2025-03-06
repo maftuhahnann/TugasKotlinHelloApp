@@ -8,11 +8,39 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/tvHello"
+        android:layout_width="328dp"
+        android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <Button
+        android:id="@+id/btnHello"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="436dp"
+        android:text="Say Hello Broo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edHello" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edHello"
+        android:layout_width="316dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="11dp"
+        android:hint="Masukkan namamu "
+        app:layout_constraintBottom_toTopOf="@+id/btnHello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
