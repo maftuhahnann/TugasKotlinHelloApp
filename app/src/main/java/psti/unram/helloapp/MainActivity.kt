@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         btnHello.setOnClickListener {
             val str: String = edHello.text.toString()
-            tvHello.setText("Hello King $str")
+            tvHello.setText("Hello king $str")
         }
     }
 }
